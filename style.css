@@ -1,0 +1,114 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .sub-heading {
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+  }
+  
+  .bell-container {
+    position: relative;
+    margin-bottom: 80px;
+  }
+  
+  .bell {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 50% 50%, #ffbf00, #ff7900);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .bell-icon img {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(203, 130, 47, 0.5);
+    opacity: 0;
+    animation: animate 1.5s linear infinite;
+  }
+  
+  .circle-1 {
+    width: 80px;
+    height: 80px;
+    top: -8%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .circle-2 {
+    width: 90px;
+    height: 90px;
+    top: -13%;
+    left: 33%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0.3s;
+  }
+  
+  .circle-3 {
+    width: 100px;
+    height: 100px;
+    top: -19.5%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0.6s;
+  }
+  
+  .send-button {
+    background: radial-gradient(circle at 50% 50%, #ffbf00, #ff7900);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin: 70px auto;
+    position: absolute;
+    top: calc(50% + 200px); /* Adjust the distance from the bell container */
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .send-button:hover {
+    background: radial-gradient(circle at 50% 50%, #09ff00, #ffbf00);
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  
